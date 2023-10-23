@@ -24,7 +24,7 @@ st.title("Incerta Web  App")
 url_input = st.text_input("Enter a URL to scrape:")
 
 # Create a submit button
-if st.button("Scrape"):
+if st.button("Scrape") or url_input:
     if url_input:
         # Call the function to scrape text and display the result
         scraped_text = scrape_text_from_url(url_input)
